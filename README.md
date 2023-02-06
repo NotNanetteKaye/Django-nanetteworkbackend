@@ -1,3 +1,3 @@
 # nanettework-backend
 
-initial commit
+Will hold links and name of respective social media
