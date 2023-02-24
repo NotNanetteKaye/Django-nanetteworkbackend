@@ -14,15 +14,15 @@ def get_all_nanettework_info(request):
     return Response(serializer.data)
 
 
-@api_view(['GET', 'POST', 'DELETE'])
-def nanettework_details(request):
-    if request.method == 'POST':
-        serializer = LinkSerializer(data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-    elif request.method == 'GET': 
-    else:
+# @api_view(['GET', 'POST', 'DELETE'])
+# def nanettework_details(request):
+#     if request.method == 'POST':
+#         serializer = LinkSerializer(data=request.data)
+#         if serializer.is_valid():
+#             serializer.save()
+#             return Response(serializer.data, status=status.HTTP_201_CREATED)
+#         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+#     elif request.method == 'GET': 
+#     else:
         
 
